@@ -1,0 +1,185 @@
+.image.is-16by9 .has-ratio,
+.image.is-16by9 img,
+.image.is-1by1 .has-ratio,
+.image.is-1by1 img,
+.image.is-1by2 .has-ratio,
+.image.is-1by2 img,
+.image.is-1by3 .has-ratio,
+.image.is-1by3 img,
+.image.is-2by1 .has-ratio,
+.image.is-2by1 img,
+.image.is-2by3 .has-ratio,
+.image.is-2by3 img,
+.image.is-3by1 .has-ratio,
+.image.is-3by1 img,
+.image.is-3by2 .has-ratio,
+.image.is-3by2 img,
+.image.is-3by4 .has-ratio,
+.image.is-3by4 img,
+.image.is-3by5 .has-ratio,
+.image.is-3by5 img,
+.image.is-4by3 .has-ratio,
+.image.is-4by3 img,
+.image.is-4by5 .has-ratio,
+.image.is-4by5 img,
+.image.is-5by3 .has-ratio,
+.image.is-5by3 img,
+.image.is-5by4 .has-ratio,
+.image.is-5by4 img,
+.image.is-9by16 .has-ratio,
+.image.is-9by16 img,
+.image.is-square .has-ratio,
+.image.is-square img {
+  height: 100%;
+  width: 100%;
+}
+
+.bd-docs-overlay,
+.bd-logos-download,
+.hero-video,
+.image.is-16by9 .has-ratio,
+.image.is-16by9 img,
+.image.is-1by1 .has-ratio,
+.image.is-1by1 img,
+.image.is-1by2 .has-ratio,
+.image.is-1by2 img,
+.image.is-1by3 .has-ratio,
+.image.is-1by3 img,
+.image.is-2by1 .has-ratio,
+.image.is-2by1 img,
+.image.is-2by3 .has-ratio,
+.image.is-2by3 img,
+.image.is-3by1 .has-ratio,
+.image.is-3by1 img,
+.image.is-3by2 .has-ratio,
+.image.is-3by2 img,
+.image.is-3by4 .has-ratio,
+.image.is-3by4 img,
+.image.is-3by5 .has-ratio,
+.image.is-3by5 img,
+.image.is-4by3 .has-ratio,
+.image.is-4by3 img,
+.image.is-4by5 .has-ratio,
+.image.is-4by5 img,
+.image.is-5by3 .has-ratio,
+.image.is-5by3 img,
+.image.is-5by4 .has-ratio,
+.image.is-5by4 img,
+.image.is-9by16 .has-ratio,
+.image.is-9by16 img,
+.image.is-square .has-ratio,
+.image.is-square img,
+.is-overlay,
+.modal,
+.modal-background {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.image img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+.image.is-16by9 {
+  padding-top: 56.25%;
+}
+.image {
+  display: block;
+  position: relative;
+}
+
+.frame-images {
+  height: 0;
+  opacity: 0;
+  padding-top: 0 !important;
+  transition: opacity 0.5s linear;
+  background-color: #f3eee5;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.frame-images:focus {
+  outline: none !important;
+}
+.frame-images.is-active {
+  height: 100%;
+  opacity: 1;
+  padding-top: 50% !important;
+}
+.frame-images .button.move {
+  padding: calc(0.5em - 1px) 1em;
+  position: fixed;
+  bottom: 1rem;
+}
+.frame-images .button.move .icon {
+  font-size: 2rem;
+}
+.frame-images .button.move.forward {
+  right: 1rem;
+}
+.frame-images .button.move.backward {
+  left: 1rem;
+}
+.frame-images img {
+  visibility: hidden;
+  opacity: 0;
+}
+.frame-images img.is-active {
+  visibility: visible;
+  opacity: 1;
+}
+.frame-images .vertical-line {
+  display: none;
+  align-items: center;
+  position: absolute;
+  right: 5%;
+  z-index: 10;
+  bottom: 0;
+  left: 5%;
+  height: 2px;
+  background-color: white;
+}
+@media screen and (min-width: 1024px) {
+  .frame-images .vertical-line {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .frame-images .vertical-line {
+    height: 3px;
+    bottom: 4%;
+  }
+}
+.frame-images .btn-slider {
+  z-index: 99;
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+  background-color: white;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+@media screen and (min-width: 1080px) {
+  .frame-images .btn-slider {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+.frame-images .btn-slider.is-active {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}

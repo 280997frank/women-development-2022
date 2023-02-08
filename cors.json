@@ -1,0 +1,11 @@
+[
+  {
+    "origin": [
+      "http://localhost:3000",
+      "https://women-development-2022.netlify.app",
+      "https://celebratingsgwomen.sg"
+    ],
+    "method": ["GET"],
+    "maxAgeSeconds": 3600
+  }
+]
